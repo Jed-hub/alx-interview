@@ -6,9 +6,10 @@ Pascal triangle module
 
 def pascal_triangle(n):
     """
-    Returns a list of lists of intergers representing the Pascal's
-    triangle of n
+    Returns a list of lists of intergers representing
+    the Pascal's triangle of n
     """
+
     if type(n) is int:
         triangle = []
         if n <= 0:
@@ -29,5 +30,4 @@ def pascal_triangle(n):
                             a_list.append(prev[i - 1] + prev[i])
                 prev = a_list
                 triangle.append(a_list)
-            return triangle
-                        
+            return triangle 
