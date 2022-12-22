@@ -30,4 +30,4 @@ def pascal_triangle(n):
                             a_list.append(prev[i - 1] + prev[i])
                 prev = a_list
                 triangle.append(a_list)
-            return triangle 
+            return triangle
